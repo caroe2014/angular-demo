@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "http-server-spa /dist/angular-demo index.html 8080",
-    "build": "ng build --prod --serviceWorker --crossOrigin=anonymous",
+    "build": "ng build --prod --serviceWorker",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
