@@ -3,8 +3,8 @@
   "version": "2.5.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "http-server-spa /dist/angular-demo index.html 8080",
+    "build": "ng build --prod --serviceWorker --crossOrigin=anonymous",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -21,6 +21,7 @@
     "@angular/http": "^7.2.15",
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
+    "@angular/pwa": "^0.803.17",
     "@angular/router": "^8.2.14",
     "angular-formio": "^4.4.3",
     "bootstrap": "^4.4.1",
